@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+    crossorigin="anonymous"></script>
+        <!-- bringing in bootstrap for JavaScript -->
+    <link rel="stylesheet" href="style.css">
+            <!-- referencing CSS from the style.css file -->
+    <title>Contact Form</title>
+</head>
+<body>
+    <form id="contact-form" method="POST" action="sendmail.php">
+        <div class="form-row form-error" style="display:none;"></div>
+        <div class="form-row">
+          <label for="contact-form-name">Enter your first and last name here:</label>
+          <input id="contact-form-name" class="form-input" type="text" name="name" required>
+        </div>
+        <div class="form-row">
+          <label for="contact-form-email">Enter your email address:</label>
+          <input id="contact-form-email" class="form-input" type="email" name="email" required>
+        </div>
+        <div class="form-row">
+          <label for="contact-form-phone">Enter your phone number:</label>
+          <input id="contact-form-phone" class="form-input" type="tel" name="phone">
+        </div>
+        <div class="form-row">
+          <label for="contact-form-message">Please add a message!:</label>
+          <textarea id="contact-form-message" class="form-input" name="message" required></textarea>
+        </div>
+        <button type="submit" >Submit contact form</button>
+      </form>
+              <!-- creation of contact form with validations requiring specific inputs-->
+</body>
+</html>
